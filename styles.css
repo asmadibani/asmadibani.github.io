@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(144, 183, 125);
+}
+.container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(144, 183, 125);
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+nav li{
+    margin-right: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.about-me::after,
+.contact::after,
+.home::after{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+}
+.about-me:hover,
+.contact:hover,
+.home:hover{
+    color: white;
+}
+.about-me:hover:after,
+.contact:hover:after,
+.home:hover:after {
+  opacity: 1;
+ 
+}
+
